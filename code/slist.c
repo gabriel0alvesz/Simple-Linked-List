@@ -142,7 +142,6 @@ void SList_DestroySList(SList *sl){
     
     SNode *aux = NULL;
     SNode *pos = sl->first->prox;
-    SNode *f = sl->first;
     
     while(pos != NULL){
 
@@ -153,7 +152,7 @@ void SList_DestroySList(SList *sl){
     }
     free(pos);
     sl = NULL;
-    puts("----> Lista Desalocada!\n");
+    puts("----> Lista Desalocada!");
     //printf("sl is Null? %d", sl == NULL);
 
 }
